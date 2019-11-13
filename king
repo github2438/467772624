@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        智慧树
-// @description 傻瓜式
+// @description 傻瓜式自动播放
 // @icon        http://assets.zhihuishu.com/icon/favicon.ico
 // @match	    *://*.zhihuishu.com/*
 // @namespace   http://tampermonkey.net/
