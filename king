@@ -1,16 +1,24 @@
-// @name        网课
-
-// @version      1.1
+// ==UserScript==
+// @name        智慧树
+// @description 傻瓜式
+// @icon        http://assets.zhihuishu.com/icon/favicon.ico
+// @match	    *://*.zhihuishu.com/*
+// @namespace   http://tampermonkey.net/
+// @version	    1.83
 // @author      king
-// @grant        by:king
+// @grant       by:king
 // ==/UserScript==
 
+/* jshint esversion: 6 */
+
+//ablePlayerX('mediaplayer').options
+//saveCacheIntervalTime
 (function() {
     'use strict';
     const $ = window.jQuery;
 
     function query() {
-        // 允许右键菜单 方便查找
+        // 允许右键菜单复制 方便查找
         $("#mediaplayer").off('contextmenu');
         var doc = document;
             doc.oncontextmenu = doc.onpaste = doc.oncopy = doc.oncut = doc.onselectstart = null;
